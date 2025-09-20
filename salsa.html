@@ -55,6 +55,16 @@
         color: black;
         background: rgba(255, 255, 255, 0.5);
       }
+
+      .salsa-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .salsa-intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -67,7 +77,8 @@
       <a href="https://en.wikipedia.org/wiki/Salsa_(dance)" target="_blank">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/122/original/salsa-header.jpg?1663066724"
-          alt=""
+          alt
+          class="salsa-intro-picture"
         />
       </a>
 
