@@ -87,6 +87,19 @@
       .grid-gallery img:hover {
         transform: scale(2);
       }
+
+      .dark {
+        background: blueviolet;
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .dark a {
+        color: blueviolet;
+      }
     </style>
   </head>
   <body>
@@ -134,5 +147,20 @@
       </p>
       <button>Learn Salsa</button>
     </div>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
